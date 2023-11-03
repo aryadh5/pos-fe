@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 <!--    defaults ^ -->
     <color name="limegreen">#85DD74</color>
+    <color name="balticsea">#2A3256</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#85DD74</color>
+    <color name="accent">#4C6A4B</color>
+
 </resources>

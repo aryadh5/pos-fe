@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.LoginOutlet">
 
     <include layout="@layout/toolbar_masuk"/>
 
-    <!-- Email or Phone Number -->
+    <!-- Cabang Spinner -->
     <LinearLayout
-        android:id="@+id/emailLayout"
+        android:id="@+id/cabangLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -24,23 +24,20 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email atau Nomor Telepon" />
+            android:text="Cabang" />
 
-        <EditText
-            android:id="@+id/editTextText"
+        <Spinner
+            android:id="@+id/cabangSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext_bg"
-            android:ems="10"
-            android:hint="Email atau Nomor Telepon"
-            android:inputType="text"
             android:padding="12dp"
             android:textSize="12dp" />
     </LinearLayout>
 
-    <!-- Password -->
+    <!-- Karyawan Spinner -->
     <LinearLayout
-        android:id="@+id/passwordLayout"
+        android:id="@+id/karyawanLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -54,19 +51,15 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"/>
+            android:text="Karyawan"/>
 
-        <EditText
-            android:id="@+id/editTextTextPassword2"
+        <Spinner
+            android:id="@+id/karyawanSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext_bg"
-            android:ems="10"
-            android:hint="Isi setidaknya 8 karakter"
-            android:inputType="textPassword"
-            android:textSize="12dp"
             android:padding="12dp"
-            />
+            android:textSize="12dp" />
     </LinearLayout>
 
     <!-- Login Button -->
@@ -79,21 +72,6 @@
         android:layout_marginTop="149dp"
         android:layout_marginLeft="19dp"
         android:layout_marginRight="19dp"
-        />
-
-    <!-- Forgot Password -->
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/forgotpass"
-        android:gravity="center"
-        android:layout_below="@id/button3"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginRight="19dp"
-        android:textColor="#1A72DD"
-        android:clickable="true"
         />
 
 </LinearLayout>

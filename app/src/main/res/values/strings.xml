@@ -23,10 +23,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    headings-->
+    <!--    headings-->
     //Headings
     <string name="heading_one">Atur Restoranmu Tanpa Biaya Langganan!</string>
     <string name="heading_two">Pelanggan Tidak Perlu Antri~</string>
     <string name="heading_three">Mulai Atur Restoranmu Sekarang!</string>
-
+    <string name="title_activity_wel">Wel</string>
+    <string name="forgotpass"><u>Lupa password?</u></string>
+    <string name="registernow">Belum punya akun? <font color="#1A72DD"><u>Daftar</u></font></string>
+    <string name="verifikasiotp"><b>Verifikasi OTP</b></string>
+    <string name="informasibisnis"><b>Informasi Bisnis</b></string>
 </resources>

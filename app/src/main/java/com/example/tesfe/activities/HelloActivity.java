@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.example.tesfe.R;
 import com.example.tesfe.adapters.ViewPagerAdapter;
 
-public class HelloActivity extends AppCompatActivity {
+public class HelloActivity extends AppCompatActivity{
 
     ViewPager mSlideViewPager;
     LinearLayout mDotLayout;
@@ -31,16 +31,10 @@ public class HelloActivity extends AppCompatActivity {
         lanjutkanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (getItem(0) < 3)
-                    mSlideViewPager.setCurrentItem(getItem(1), true);
-                else {
-                    Intent i = new Intent(HelloActivity.this, mainscreen.class);
-                    startActivity(i);
-                    finish();
-                }
+                Intent i = new Intent(HelloActivity.this, WelcomeActivity.class);
+                startActivity(i);
             }
         });
-
         mSlideViewPager = findViewById(R.id.slideViewPager);
         mDotLayout = findViewById(R.id.indicator_layout);
 

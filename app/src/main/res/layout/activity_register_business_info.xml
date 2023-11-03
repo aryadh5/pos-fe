@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterBusinessInfo">
+    <include layout="@layout/toolbar_daftar"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/informasiBisnisLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="61dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/informasibisnis"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="2dp"
+            android:textSize="15dp"
+            android:text="Silahkan isikan informasi bisnis Anda"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/namaRestoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="19dp">
+
+        <TextView
+            android:id="@+id/namaRestoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Restoran" />
+
+        <EditText
+            android:id="@+id/editTextNamaResto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Nama restoran"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="19dp">
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/noTelpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="19dp">
+
+        <TextView
+            android:id="@+id/noTelpLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon" />
+
+        <EditText
+            android:id="@+id/editTextNoTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Nomor Telepon"
+            android:inputType="phone|number"
+            android:padding="12dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/alamatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="19dp">
+
+        <TextView
+            android:id="@+id/alamatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Restoran" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Alamat restoran"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/lanjutButton"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_marginTop="52dp"
+        android:layout_marginHorizontal="19dp"/>
+</LinearLayout>
