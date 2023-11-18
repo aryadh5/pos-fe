@@ -33,4 +33,8 @@
     <string name="registernow">Belum punya akun? <font color="#1A72DD"><u>Daftar</u></font></string>
     <string name="verifikasiotp"><b>Verifikasi OTP</b></string>
     <string name="informasibisnis"><b>Informasi Bisnis</b></string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
