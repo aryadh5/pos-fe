@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         // Initialize your UI elements
         editTextEmail = findViewById(R.id.editTextText);
         editTextPassword = findViewById(R.id.editTextTextPassword2);
-        loginButton = findViewById(R.id.button3);
+        loginButton = findViewById(R.id.loginbtn);
         forgotPassword = findViewById(R.id.textView7);
 
         // Set click listener for the login button
@@ -34,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Add your login logic here
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

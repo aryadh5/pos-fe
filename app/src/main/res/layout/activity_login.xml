@@ -71,7 +71,7 @@
 
     <!-- Login Button -->
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/loginbtn"
         style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="@string/forgotpass"
         android:gravity="center"
-        android:layout_below="@id/button3"
+        android:layout_below="@id/loginbtn"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="19dp"
         android:layout_marginRight="19dp"
