@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.ManageOutletActivity">
 
-    <include layout="@layout/toolbar_menu" />
+    <include layout="@layout/toolbar_manage_outlet" />
 
     <!-- RecyclerView for displaying outlets -->
     <androidx.recyclerview.widget.RecyclerView

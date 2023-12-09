@@ -1,8 +1,10 @@
-package com.example.tesfe;
+package com.example.tesfe.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.tesfe.R;
 
 public class TransactionHistoryActivity extends AppCompatActivity {
 

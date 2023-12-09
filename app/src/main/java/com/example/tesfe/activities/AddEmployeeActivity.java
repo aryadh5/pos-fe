@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.tesfe.R;
 
-public class KasirProdukActivity extends AppCompatActivity {
+public class AddEmployeeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kasir_produk);
+        setContentView(R.layout.activity_add_employee);
     }
 }

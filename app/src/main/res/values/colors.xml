@@ -13,5 +13,6 @@
     <color name="inactive">#C4C4C4</color>
     <color name="active">#85DD74</color>
     <color name="accent">#4C6A4B</color>
+    <color name="grey">#D1D1D1</color>
 
 </resources>

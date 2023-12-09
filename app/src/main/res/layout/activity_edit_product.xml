@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProductActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.EditProductActivity">
+        <include layout="@layout/toolbar_manage_product"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/informasiBisnisLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="61dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginBottom="17dp"
+                android:text="@string/editproduk"/>
+        </LinearLayout>
+
+        <!-- Layout for uploading an image -->
+        <LinearLayout
+            android:id="@+id/uploadImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- ImageView for displaying the selected image -->
+            <ImageView
+                android:id="@+id/imageViewSelectedImage"
+                android:layout_width="63dp"
+                android:layout_height="88dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/whatsapp" />
+
+            <!-- Button for selecting an image -->
+            <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Foto"
+                android:onClick="selectImage"
+                android:layout_gravity="center"
+                android:layout_marginStart="123dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/namaProdukLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/namaProdukLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Produk" />
+
+            <EditText
+                android:id="@+id/editTextNamaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Nama Produk"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hargaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/hargaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga" />
+
+            <EditText
+                android:id="@+id/editTextHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Harga"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kategoriLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <!-- Product Category -->
+            <TextView
+                android:id="@+id/kategoriLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori" />
+
+            <EditText
+                android:id="@+id/editTextKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Kategori"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deskripsiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <!-- Optional: Product Description -->
+            <TextView
+                android:id="@+id/deskripsiLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Produk (opsional)" />
+
+            <EditText
+                android:id="@+id/editTextDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Deskripsi produk"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/tambahButton"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="19dp"/>
+    </LinearLayout>
+</ScrollView>

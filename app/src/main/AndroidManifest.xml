@@ -12,16 +12,55 @@
         android:theme="@style/Theme.Tesfe.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".activities.ManageEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ManageCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditBranchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddBranchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.ManageProductActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ManageOutletActivity"
             android:exported="false" />
         <activity
-            android:name=".TransactionHistoryActivity"
+            android:name=".activities.TransactionHistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.KasirProdukActivity"
+            android:name=".activities.CashierActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ForgotPasswordNewPasswordActivity"

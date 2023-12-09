@@ -4,23 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.tesfe.R;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
 
 import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.tesfe.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -51,9 +43,78 @@ public class MainActivity extends AppCompatActivity {
                 openDrawer(drawerLayout);
             }
         });
+        // Set click listeners for each item
+        // Set click listeners for each item
+        kasir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open Kasir Activity
+                redirectActivity(MainActivity.this, CashierActivity.class);
+            }
+        });
+
+        laporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open Laporan Activity
+//                redirectActivity(MainActivity.this, LaporanActivity.class);
+            }
+        });
+
+        // Similar listeners for other items...
+
+        // Example: Redirecting to SetPinActivity when Akun is clicked
+        riwayatTransaksi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open SetPinActivity (or any other activity you want)
+                redirectActivity(MainActivity.this, TransactionHistoryActivity.class);
+            }
+        });
+        kelolaToko.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open SetPinActivity (or any other activity you want)
+                redirectActivity(MainActivity.this, ManageOutletActivity.class);
+            }
+        });
+        kelolaProduk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open SetPinActivity (or any other activity you want)
+                redirectActivity(MainActivity.this, ManageProductActivity.class);
+            }
+        });
+        kelolaPelanggan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open SetPinActivity (or any other activity you want)
+                redirectActivity(MainActivity.this, ManageCustomerActivity.class);
+            }
+        });
+        // Example: Handling logout (Keluar)
         keluar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Implement your logout logic here
+                // For now, display a Toast message
+                Toast.makeText(MainActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+            }
+        });
+        akun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open SetPinActivity (or any other activity you want)
+                redirectActivity(MainActivity.this, AccountActivity.class);
+            }
+        });
+
+        // Example: Handling logout (Keluar)
+        keluar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Implement your logout logic here
+                // For now, display a Toast message
                 Toast.makeText(MainActivity.this, "Logout", Toast.LENGTH_SHORT).show();
             }
         });

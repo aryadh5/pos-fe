@@ -34,6 +34,17 @@
     <string name="verifikasiotp"><b>Verifikasi OTP</b></string>
     <string name="informasibisnis"><b>Informasi Bisnis</b></string>
     <string name="lupapassword"><b>Lupa Password</b></string>
+    <string name="cabangbaru"><b>Tambah Cabang Baru</b></string>
+    <string name="produkbaru"><b>Tambah Produk Baru</b></string>
+    <string name="karyawanbaru"><b>Tambah Karyawan Baru</b></string>
+    <string name="pelangganbaru"><b>Tambah Pelanggan Baru</b></string>
+    <string name="editccabang"><b>Edit Cabang</b></string>
+    <string name="editproduk"><b>Edit Produk</b></string>
+    <string name="editkaryawan"><b>Edit Karyawan</b></string>
+    <string name="editpelanggan"><b>Edit Pelanggan</b></string>
+    <string name="total"><b>Total</b></string>
+
+    <string name="daftarbarang"><b>Daftar Barang</b></string>
 
     <!-- to toggle the open close button of the navigation drawer -->
     <string name="nav_open">Open</string>

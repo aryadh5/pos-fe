@@ -12,6 +12,12 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textAlignment">center</item>
     </style>
+    <style name="NavTitle2" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+    </style>
     <style name="NavBackButton" parent="Widget.AppCompat.Toolbar.Button.Navigation">
         <item name="android:radius">8dp</item>
         <item name="android:layout_width">34dp</item>

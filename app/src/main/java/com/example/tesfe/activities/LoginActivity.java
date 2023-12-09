@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Add your login logic here
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, LoginOutlet.class);
                 startActivity(intent);
             }
         });

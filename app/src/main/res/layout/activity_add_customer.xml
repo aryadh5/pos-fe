@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddCustomerActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.AddCustomerActivity">
+        <include layout="@layout/toolbar_manage_customer"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/informasiBisnisLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="61dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginBottom="17dp"
+                android:text="@string/pelangganbaru"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:textSize="15dp"
+                android:text="Silahkan isikan informasi pelanggan Anda"/>
+        </LinearLayout>
+
+        <!-- Product Name -->
+        <LinearLayout
+            android:id="@+id/namaRestoranLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Restoran" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Nama Restoran"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Nomor Telepon -->
+        <LinearLayout
+            android:id="@+id/nomorTeleponLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:id="@+id/nomorTeleponLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon" />
+
+            <EditText
+                android:id="@+id/editTextNomorTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Nomor Telepon"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Alamat Restoran -->
+        <LinearLayout
+            android:id="@+id/alamatRestoranLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:id="@+id/alamatRestoranLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat Restoran" />
+
+            <EditText
+                android:id="@+id/editTextAlamatRestoran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Alamat Restoran"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Provinsi -->
+        <LinearLayout
+            android:id="@+id/provinsiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:id="@+id/provinsiLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provinsi" />
+
+            <EditText
+                android:id="@+id/editTextProvinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Pilih Provinsi"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Kota -->
+        <LinearLayout
+            android:id="@+id/kotaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="19dp">
+
+            <TextView
+                android:id="@+id/kotaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kota" />
+
+            <EditText
+                android:id="@+id/editTextKota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_bg"
+                android:ems="10"
+                android:hint="Pilih Kota"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/tambahButton"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="19dp"/>
+        <Button
+            android:id="@+id/batalButton"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:layout_marginTop="22dp"
+            android:layout_marginHorizontal="19dp"/>
+    </LinearLayout>
+</ScrollView>

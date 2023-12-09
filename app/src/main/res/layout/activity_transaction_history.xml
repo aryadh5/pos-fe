@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TransactionHistoryActivity">
+    tools:context=".activities.TransactionHistoryActivity">
 
-    <include layout="@layout/toolbar_menu" />
+    <include layout="@layout/toolbar_transaction_history"/>
 
     <!-- Toolbar for filter -->
     <androidx.appcompat.widget.Toolbar
