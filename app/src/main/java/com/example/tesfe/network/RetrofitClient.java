@@ -1,4 +1,4 @@
-package com.example.tesfe.utils;
+package com.example.tesfe.network;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {

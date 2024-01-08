@@ -1,7 +1,8 @@
 package com.example.tesfe.models;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Product {
+public class ProductResponse {
     @SerializedName("id")
     private int id;
 
@@ -12,16 +13,25 @@ public class Product {
     private String description;
 
     @SerializedName("price")
-    private float price;
+    private double price;
 
     @SerializedName("is_for_sale")
     private boolean isForSale;
 
     @SerializedName("category")
-    private Category category;
+    private CategoryResponse category;
 
-    // Getters and setters (You can generate these using your IDE)
+    // Constructor
+    public ProductResponse(int id, String name, String description, double price, boolean isForSale, CategoryResponse category) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.isForSale = isForSale;
+        this.category = category;
+    }
 
+    // Getters and setters for the product properties
     public int getId() {
         return id;
     }
@@ -46,11 +56,11 @@ public class Product {
         this.description = description;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -62,11 +72,11 @@ public class Product {
         isForSale = forSale;
     }
 
-    public Category getCategory() {
+    public CategoryResponse getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(CategoryResponse category) {
         this.category = category;
     }
 }

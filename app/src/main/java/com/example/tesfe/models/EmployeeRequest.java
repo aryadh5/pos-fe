@@ -3,10 +3,7 @@ package com.example.tesfe.models;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
-public class Employee {
-    @SerializedName("id")
-    private int id;
-
+public class EmployeeRequest {
     @SerializedName("name")
     private String name;
 
@@ -22,18 +19,19 @@ public class Employee {
     @SerializedName("role")
     private String role;
 
-    @SerializedName("outlets")
-    private List<Outlet> outlets;
+    @SerializedName("outletIds")
+    private List<Integer> outletIds;
 
-    // Getters and setters (You can generate these using your IDE)
-
-    public int getId() {
-        return id;
+    public EmployeeRequest(String name, String phone, String pin, String email, String role, List<Integer> outletIds) {
+        this.name = name;
+        this.phone = phone;
+        this.pin = pin;
+        this.email = email;
+        this.role = role;
+        this.outletIds = outletIds;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    // Getters and setters
 
     public String getName() {
         return name;
@@ -75,11 +73,11 @@ public class Employee {
         this.role = role;
     }
 
-    public List<Outlet> getOutlets() {
-        return outlets;
+    public List<Integer> getOutletIds() {
+        return outletIds;
     }
 
-    public void setOutlets(List<Outlet> outlets) {
-        this.outlets = outlets;
+    public void setOutletIds(List<Integer> outletIds) {
+        this.outletIds = outletIds;
     }
 }

@@ -1,12 +1,8 @@
 package com.example.tesfe.models;
-import java.util.List;
-import com.google.gson.annotations.SerializedName;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Outlet {
-    @SerializedName("id")
-    private int id;
-
+public class OutletCreateRequest {
     @SerializedName("name")
     private String name;
 
@@ -22,8 +18,7 @@ public class Outlet {
     @SerializedName("is_active")
     private boolean isActive;
 
-    public Outlet(int id, String name, String address, String phone, String email, boolean isActive) {
-        this.id = id;
+    public OutletCreateRequest(String name, String address, String phone, String email, boolean isActive) {
         this.name = name;
         this.address = address;
         this.phone = phone;
@@ -32,14 +27,6 @@ public class Outlet {
     }
 
     // Getters and setters
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

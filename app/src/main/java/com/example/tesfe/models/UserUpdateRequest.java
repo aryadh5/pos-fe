@@ -1,10 +1,7 @@
 package com.example.tesfe.models;
 import com.google.gson.annotations.SerializedName;
 
-public class User {
-    @SerializedName("id")
-    private int id;
-
+public class UserUpdateRequest {
     @SerializedName("name")
     private String name;
 
@@ -14,20 +11,17 @@ public class User {
     @SerializedName("phone")
     private String phone;
 
-    // Additional fields for specific endpoints
     @SerializedName("password")
     private String password;
 
-    @SerializedName("token")
-    private String token;
-
-    public int getId() {
-        return id;
+    public UserUpdateRequest(String name, String email, String phone, String password) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    // Getters and setters if needed
 
     public String getName() {
         return name;
@@ -59,13 +53,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
     }
 }
